@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="weatherstyle.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <form onsubmit="getweather(); return false">
+    <div class="card">
+        <div class="search">
+            <input type="text" id="weathersearch" placeholder="Enter Your City Name">
+            <button type="submit">
+                <img src="./images/search.png" alt="searchcity">
+            </button>
+        </div>
+    </form>
+        
+        <div class="weather">
+            <img src="./images/clouds.png" alt="weather" class="weatherlogo">
+            <h1 id="weatherno">29°C</h1>
+            <h2 id="city">lahore</h2>
+            
+        </div>
+       
+        <div class="details">
+            <div class="col" id="col1">
+                <img src="./images/humidity.png" alt="">
+                <div>
+                    <p id="humadityno">50%</p>
+                    <p class="humidity">Humidity</p>
+     
+                </div>
+            </div>
+            <!-- second col -->
+            <div class="col" id="col2">
+                <img src="./images/wind.png" alt="">
+                <div>
+                    <p id="windno">12 km/h</p>
+                    <p class="wind">Wind Speed</p>
+     
+                </div>
+            </div>
+
+
+
+
+        </div>  
+        </div>
+            
+            
+            
+            
+            
+            
+
+
+
+        <script src="./script.js"></script>
+
+</body>
+
+</html>
